@@ -1,0 +1,218 @@
+/* @font-face {
+    font-family: 'Open Sans';
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+    font-weight: bold;
+    font-style: normal;
+} */
+
+:root {
+    --heading-font: 'Anek Telugu', sans-serif;
+}
+
+body {
+    min-width: 1200px;
+    margin: 0;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+}
+
+h1 {
+    font-family: var(--heading-font);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-header {
+    position: relative;
+    background-image: url('https://images.alphacoders.com/598/598154.jpg');
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+}
+
+.site-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-item:nth-child(n + 2) {
+    margin-left: 33px;
+}
+
+.menu-link {
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    color: #ded6d1;
+    font-size: 17px;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+.site-title {
+    width: 685px;
+    margin: 0 auto;
+    padding: 105px 0 128px 0;
+    /* text-transform: uppercase; */
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 75px;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+.content-wrap {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 61px 0 64px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article {
+    cursor: pointer;
+    display: flex;
+    background-color: white;
+    height: 294px;
+    /* min-height: ; */
+    border-radius: 7px;
+    /* max-height: 294px; */
+}
+
+.article:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11), 0 24px 46px var(--box-shadow-color);
+}
+
+.article:hover .overlay {
+    transform: scale(4) translateZ(0);
+}
+
+.article-content {
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    /* background: #f4f4f4; */
+    font-family: 'roboto condensed', sans-serif;
+    font-weight: 300;
+}
+
+.article:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.article-text-column {
+    width: 90%;
+    padding-left: 30px;
+}
+
+.article-title {
+    padding-top: 20px;
+    width: 90%;
+    margin: 0;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 150%;
+    line-height: 1.2;
+    overflow: hidden;
+    /* width: 10px; */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.article-title-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.article-title-link:hover {
+    color: #b59f5b;
+}
+
+.article-datetime {
+    margin-right: 5px;
+    font-size: 12px;
+    line-height: 40px;
+    color: #888888;
+}
+
+.article-author {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 40px;
+    color: black;
+}
+
+/* .article-img {
+    max-width: 100%;
+    max-height: 100%;
+} */
+
+#testing {
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* img {
+    object-fit: fill !important;
+    width: 294px !important;
+    height: 294px !important;
+    vertical-align: middle;
+} */
+
+.article-img {
+    object-fit: fill !important;
+    width: 294px !important;
+    height: 294px !important;
+}
+
+
+.copyrights {
+    margin: 0;
+    padding: 55px 0 40px 0;
+    text-align: center;
+}
